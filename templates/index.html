@@ -6,5 +6,15 @@
 </head>
 <body>
     Voici ma 1ére vue !
+
+      <ul>
+        {% for team in teams_data %}
+            <li>
+                <strong>Nom de l'équipe:</strong> {{ team.name }}<br>
+                <strong>ID de l'équipe:</strong> {{ team.id }}<br>
+                <!-- Affichez d'autres informations de l'équipe ici -->
+            </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
